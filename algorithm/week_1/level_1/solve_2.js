@@ -1,9 +1,10 @@
 export const shiftInputCheck = (input) => {
   const isString = typeof input === 'string'
   if (isString) {
-    const includesSpace = input.includes(' ')
-    const spaceOne = input.split(' ').length === 2
-    const allNumberCheck = input.split(' ').every((el) => !isNaN(Number(el)) && typeof Number(el))
+    const trimSpace = input.trim()
+    const includesSpace = trimSpace.includes(' ')
+    const spaceOne = trimSpace.split(' ').length === 2
+    const allNumberCheck = trimSpace.split(' ').every((el) => !isNaN(Number(el)) && typeof Number(el))
 
     return includesSpace && spaceOne && allNumberCheck
   }
