@@ -11,7 +11,7 @@
 
 ## 7. 배열
 * js의 배열은 객체이다
-* length 속성(원소의 개수를 의미하지는 않음)을 가지고 있다
+* length 속성(원소의 개수를 의미하지는 않음)을 가지고 있다
 * 배열인지 확인하려면, [Array.isArray](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)로 확인
 * shift와 unshift 메소드는 pop과 push에 비해 많이느리다
 * map, reduce, filter는 배열의 끝에 도달하기 전에는 종료할 수 없다
@@ -63,7 +63,7 @@ const by = (...keys) => {
 ## 8. 객체
 * undefined를 저장하지 않는 것이 좋다
 * js는 주어진 키와 속성이 같은지 === 연산자를 이용한다
-* 객체의 복사는 [Object.assign](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)을 이용
+* 객체의 복사는 [Object.assign](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)을 이용
 * Object.create는 기존의 객체가 새로운객체의 prototype이 된다
 * 아무것도 상속받지않는 객체를 만드는 방법 - Object.create(null)
 * Object.create vs WeakMap - 똑같은 일을 하지만 Object.create는 키를 문자열만 허용하고, WeakMap은 키를 객체만 허용한다
