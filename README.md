@@ -19,3 +19,4 @@
 
 ## 4. 프로젝트
 * 책과 알고리즘을 한 후 기획 후 진행
+  1. react 복습을 위한 todolist 구현 - react_hook_todolist folder
