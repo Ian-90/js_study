@@ -13,10 +13,20 @@ A를 B로 나눈 몫과 나머지
 입력           | 출력 
 ------------- | ---------
 10 2 | 5 0
-19 4 | 2 2
+10 4 | 2 2
 
 
 ## solution 1
 ```javascript
+const getQuotient = (number, divider) => Math.floor(number / divider)
+const getReminder = (number, divider) => number % divider
 
+const getQuotientAndRemainder = (numberAndDivider) => {
+  const [number, divider] = numberAndDivider.split(' ')
+  const Q = getQuotient(Number(number), Number(divider))
+  const R = getReminder(Number(number), Number(divider))
+  return `${Q} ${R}`
+}
 ```
+
+* 몫을 구하는 함수와 나머지를 구하는 함수를 나누어서 구현하였다.
